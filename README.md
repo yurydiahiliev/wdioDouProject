@@ -1,1 +1,8 @@
-Run tests - npx wdio run .\wdio.conf.ts
+## Run tests
+
+``npm test
+``
+
+## Report
+``
+npm run report``
