@@ -1,10 +1,27 @@
 {
   "name": "wdioDouProject",
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "test": "wdio wdio.conf.ts",
+    "echo:lint": "echo \"Running eslint rules ... \" && exit 0",
+    "echo:test": "echo \"Running Web Tests ... \" && exit 0",
+    "report": "allure generate ./allure-results --clean && allure open"
+  },
   "devDependencies": {
     "@testing-library/webdriverio": "^3.2.1",
+    "@types/chai": "^5.0.1",
+    "@types/mocha": "^10.0.9",
+    "@wdio/allure-reporter": "^9.2.2",
     "@wdio/cli": "^9.2.8",
     "@wdio/local-runner": "^9.2.6",
     "@wdio/mocha-framework": "^9.2.5",
+    "@wdio/spec-reporter": "^9.2.8",
+    "allure-commandline": "^2.32.0",
+    "chai": "^5.1.2",
+    "eslint": "^9.14.0",
+    "eslint-plugin-wdio": "^9.0.8",
+    "mocha": "^10.8.2",
     "reflect-metadata": "^0.2.2",
     "tsx": "^4.19.2",
     "wdio-wait-for": "^3.0.11"
