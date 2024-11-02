@@ -9,6 +9,7 @@
     "report": "allure generate ./allure-results --clean && allure open"
   },
   "devDependencies": {
+    "@eslint/eslintrc": "^3.1.0",
     "@eslint/js": "^9.14.0",
     "@testing-library/webdriverio": "^3.2.1",
     "@types/chai": "^5.0.1",
